@@ -1,0 +1,78 @@
+*, *:before, *:after {
+  margin: 0;
+  padding:0;
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+} 
+
+body{
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: normal;
+  background: white;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  border-bottom: 1px solid; 
+  color: black;
+}
+
+a:hover{
+  border-bottom: 1px dashed;
+}
+
+::-moz-selection{background: blue; color: white; text-shadow:none;}
+::selection{background: blue; color: white; text-shadow:none;}
+
+
+.bizcard{
+  background: #fafafa;
+  outline: 1px solid #f5f5f5;
+  letter-spacing: 0.1em;
+  margin: 35px;
+  width: 3.5in;
+  height: 2in;
+  padding: 2em;
+  box-shadow: 2px 2px 2px #bfbfbf;
+}
+
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+.animated.hinge {
+  animation-duration: 1s;
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
