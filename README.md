@@ -1,2 +1,2 @@
 # maxackerman.github.io
-Personal Site
+Business Card
